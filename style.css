@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+.pop-up{
+    flex-direction: column;
+    width: 350px;
+    /* border-radius: 2px; */
+}
+
+.color-picker{
+    padding: 30px 0;
+    width: 100%;
+    background-color: rgba(233, 210, 233, 0.938);
+}
+#pickBtn{
+    background-color: hsla(285, 36%, 36%, 0.91);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    font-size: .9rem;
+}
+#pickBtn:hover{
+    background-color: hsla(285, 35%, 37%, 0.897);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.507);
+    /* font-size: .93rem; */
+}
+.picked-colors{
+    width: 100%;
+    /* min-height: 13vh; */
+}
+.picked-colors header{
+    justify-content: space-between;
+    padding: 3px 6px;
+    font-size: .86rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+    /* background-color: #4242421a; */
+}
+#clear-all{
+    color: rgba(35, 44, 53, 0.733);
+    cursor: pointer;
+}
+#color-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+#color{
+    display: flex;
+    width: calc(100%/3);
+    list-style: none;
+    margin: 4px 0;
+    cursor: pointer;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+}
+#rectangle {
+    background-color: lightseagreen;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    margin: 0 3px;
+}
+#color-name{
+    font-size: .78rem;
+    font-weight: bold;
+}
